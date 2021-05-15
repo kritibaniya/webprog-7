@@ -18,7 +18,7 @@ public class KundeRepository {
     }
 
     public List<Kunde> hentAlleKunder(){
-        String sql="SELECT * FROM Kunde";
+        String sql="SELECT * FROM Kunde ORDER BY UPPER (navn)";
         List<Kunde> alleKunder=db.query(sql,new BeanPropertyRowMapper(Kunde.class));
         return alleKunder;
     }

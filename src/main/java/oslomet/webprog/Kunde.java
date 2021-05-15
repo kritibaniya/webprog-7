@@ -1,5 +1,9 @@
 package oslomet.webprog;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
 public class Kunde {
     private String navn;
     private String adresse;
@@ -27,4 +31,6 @@ public class Kunde {
     public void setAdresse(String adresse) {
         this.adresse = adresse;
     }
+
+
 }

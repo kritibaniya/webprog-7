@@ -1,3 +1,8 @@
+//Ready funksjon slik at skjemaet blir listet opp om man oppdaterer siden
+$(function(){
+    hentAlle();
+});
+
 function regKunde() {
     const kunde = {
         navn : $("#navn").val(),
